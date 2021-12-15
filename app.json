@@ -1,0 +1,40 @@
+{
+    "name": "simple telegram link wayback bot",
+    "description": "A telegram bot",
+    "keywords": [
+        "telegram",
+        "wayback"
+    ],
+    "repository": "https://github.com/HuzunluArtemis/WaybackBot",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Telegram bot token. From BotFather",
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "Read readme",
+            "value": ""
+        },
+        "AUTH_IDS": {
+            "description": "Read readme",
+            "value": "0"
+        },
+        "OWNER_ID": {
+            "description": "Read readme",
+            "value": "0"
+        },
+        "AUTO_SAVE_ALL_URLS": {
+            "description": "Read readme",
+            "value": "False"
+        }
+    },
+    "stack": "container"
+}

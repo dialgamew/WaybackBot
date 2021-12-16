@@ -22,8 +22,8 @@ async def help(client, message: Message):
 	sampleText = ""
 	if Config.AUTO_SAVE_ALL_URLS:
 		sampleText += "🇬🇧 If you send me a link, i will wayback it for you.\n🇹🇷 Bana bir link gönderirsen onu arşivlemeye çalışacağım.\n\n"
-	sampleText += f"🇬🇧 You can save a page with: /{Config.SAVE_COMMAND} -Link-\n🇹🇷 Bir sayfayı şöyle kaydedebilirsin: /{Config.SAVE_COMMAND} -Link-\n"
-	sampleText += f"🇬🇧 Example / 🇹🇷 Örnek: /{Config.SAVE_COMMAND} https://www.google.com.tr"
+	sampleText += f"🇬🇧 You can save a page with: /{Config.SAVE_COMMAND[0]} -Link-\n🇹🇷 Bir sayfayı şöyle kaydedebilirsin: /{Config.SAVE_COMMAND[0]} -Link-\n\n"
+	sampleText += f"🇬🇧 Example / 🇹🇷 Örnek:\n\n`/{Config.SAVE_COMMAND[0]} https://www.google.com.tr`"
 	tumad = message.from_user.first_name
 	if message.from_user.last_name != None: tumad += f" {message.from_user.last_name}"
 	toSendStr = f"Esenlikler / Hi {tumad}\n\n" + sampleText
@@ -37,4 +37,3 @@ async def help(client, message: Message):
 				]
 			])
 	await sendMessage(message,toSendStr,reply_markup)
-    
